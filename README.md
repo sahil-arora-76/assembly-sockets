@@ -10,4 +10,9 @@ nasm -felf64 socket.asm -o socket.o
 ld -o socket socket.o 
 ./socket
 ```
+or 
+build from make
+```
+make 
+``` 
 then visit localhost:9001 
