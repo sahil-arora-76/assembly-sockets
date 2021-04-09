@@ -25,7 +25,7 @@ endif
 	@ld -o  $@ $<
 	@echo "Done!$(NOCLR)" 	
        		
-build/$(OBJ): $(MAIN) 
+build/%.o: %.asm 
 ifneq ($(OS), Linux) 
 	@echo "$(RED)Not supported environment $(NOCLR)" 
 endif
